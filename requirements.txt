@@ -1,6 +1,4 @@
 pandas
 streamlit
 pickle5
-requests
-time
 numpy

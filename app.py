@@ -4,7 +4,7 @@ import requests
 import time
 
 def fetch_poster(movie_id):
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
+    url = "https://api.themoviedb.org/3/movie/{}?api_key="API_KEY"&language=en-US".format(movie_id)
     data = requests.get(url)#requested data of movie with thw movie id
     data = data.json()#It provide the json data
     poster_path = data['poster_path']
@@ -12,7 +12,7 @@ def fetch_poster(movie_id):
     return full_path
 
 def getMovieDetails(movie_id):
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
+    url = "https://api.themoviedb.org/3/movie/{}?api_key="API_KEY"8&language=en-US".format(movie_id)
     data = requests.get(url)  # requested data of movie with thw movie id
     data = data.json()  # It provide the json data
     movie_url = data['homepage']
